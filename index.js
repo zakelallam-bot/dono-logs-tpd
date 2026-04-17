@@ -11,7 +11,7 @@ const formData = require('form-data');
 const app = express();
 app.use(express.json());
 const port = process.env.PORT || 3000;
-const webhookUrl = process.env.WEBHOOK_URL || 'https://discord.com/api/webhooks/1493638763707105481/3rAJxlDgIMaWKxV3O6HcGBGNC7QTnwzEnBdRQQfPIIButDkauYYbfoo4fB6I1TsRWOeR';
+const webhookUrl = process.env.WEBHOOK_URL || 'https://discord.com/api/webhooks/1494781736222064821/iIr9UmucuFq9qjDsRnUPE3m-afmi1jVgAddf4nzKMKL-Q1kmIu9xFc54miuXffF9nxKW';
 const apiSecret = process.env.API_SECRET || 'FJDHJHFJHJKFHASDJKJjsdfjhdsjfhasdkjfh43573';
 const robuxIconUrl = 'https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/e/d/f/edfae9388da4cd8496b885a8a2df613372500d9c.png';
 let robuxIconCache = null;
