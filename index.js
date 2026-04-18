@@ -21,25 +21,25 @@ async function getRobuxIcon() {
   return robuxIconCache;
 }
 const emojis = {
-  robuxig: '<:robuxig:1493326877186854952>',
-  nukelol: '<:nukelol:1493326708407795804>',
-  tier1M: '<:smitehammer:1493326626539307261>',
-  tier10M: '<:starfalllol:1493326772710801531>',
+  robuxig: '<:robuxok:1494966067284414524>',
+  nukelol: '<:nukereal:1494966382104805386>',
+  tier1M: '<:smitereal:1494966434202386573>',
+  tier10M: '<:starfallreal:1494966501650727023>',
 };
 function getTierEmoji(amount) {
-  if (amount >= 10_000) return emojis.tier10M;
-  if (amount >= 1_000) return emojis.tier1M;
+  if (amount >= 10_000_000) return emojis.tier10M;
+  if (amount >= 1_000_000) return emojis.tier1M;
   return emojis.nukelol;
 }
 function getTheme(amount) {
-  if (amount >= 10_000) return {
+  if (amount >= 10_000_000) return {
     accentColor: '#ff1a1a',
     glowColor:   'rgba(129,1,0,1)',
     glowHeight:  1.0,
     embedColor:  0xcc0000,
     hasGlow:     true,
   };
-  if (amount >= 1_000) return {
+  if (amount >= 1_000_000) return {
     accentColor: '#FF0082',
     glowColor:   'rgba(144, 0, 77, 1)',
     glowHeight:  0.30,
